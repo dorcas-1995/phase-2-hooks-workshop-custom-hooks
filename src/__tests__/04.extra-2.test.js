@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import { useLocalStorage } from "../exercise/04";
-// import { useLocalStorage } from "../solution/04.extra-2";
+// import { useLocalStorage } from "../exercise/04";
+import { useLocalStorage } from "../solution/04.extra-2";
 
 beforeEach(() => {
   localStorage.clear();
@@ -31,4 +31,4 @@ describe("Exercise 04 - Bonus 2", () => {
     unmount();
     expect(spy).toHaveBeenCalledWith("storage", expect.any(Function));
   });
-});
+})
